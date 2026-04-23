@@ -1,0 +1,28 @@
+PS C:\Users\093111_226307\Desktop> mkdir git_challenge
+>> cd git_challenge
+
+
+    ディレクトリ: C:\Users\093111_226307\Desktop
+
+
+Mode                 LastWriteTime         Length Name          
+----                 -------------         ------ ----          
+d-----        2026/04/23     16:07                git_challenge 
+
+
+PS C:\Users\093111_226307\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/093111_226307/Desktop/git_challenge/.git/
+PS C:\Users\093111_226307\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\093111_226307\Desktop\git_challenge> git commit -m"1回目のコミット: Hello, world!を追加"
+[main (root-commit) 14dde6b] 1回目のコミット: Hello, world!を追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\093111_226307\Desktop\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\093111_226307\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\093111_226307\Desktop\git_challenge> git commit -m "2回目のコミット: 日本語を追加"
+[main 9c92e1e] 2回目のコミット: 日本語を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\093111_226307\Desktop\git_challenge> git log --oneline
+9c92e1e (HEAD -> main) 2回目のコミット: 日本語を追加
+14dde6b 1回目のコミット: Hello, world!を追加
+PS C:\Users\093111_226307\Desktop\git_challenge> 
